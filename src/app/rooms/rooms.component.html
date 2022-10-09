@@ -1,0 +1,27 @@
+<!-- <h1 class="d-flex justify-content-center">Welcome to {{hotelName}} </h1> -->
+
+<div class="d-flex justify-content-center">
+
+    <div *ngIf="availableRoom > 0" >
+      Available Rooms: 
+        <p>{{availableRoom}}</p>
+    </div>
+    <p *ngIf="availableRoom <= 0" > Sorry we have not available rooms!</p>
+
+</div>
+
+
+
+<app-rooms-list *ngIf="toggleTable" [roomList]="roomList" (selectedRoom)="selectRoom($event)" ></app-rooms-list>
+
+<div>
+
+  <button (click)="toggle()">Toggle</button>
+
+</div>
+
+
+<div>
+
+  
+</div>
