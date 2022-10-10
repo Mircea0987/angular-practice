@@ -7,10 +7,11 @@
         <p>{{availableRoom}}</p>
     </div>
     <p *ngIf="availableRoom <= 0" > Sorry we have not available rooms!</p>
+    
 
 </div>
 
-
+<input type="date" id="birthday" name="birthday">
 
 <app-rooms-list *ngIf="toggleTable" [roomList]="roomList" (selectedRoom)="selectRoom($event)" ></app-rooms-list>
 

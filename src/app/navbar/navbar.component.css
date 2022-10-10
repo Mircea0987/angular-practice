@@ -1,0 +1,16 @@
+.navbar{
+    background-color: transparent;
+}
+.p-4{
+    list-style: none;
+}
+.title{
+    color: rgb(34, 16, 63);
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+
+}
+button { 
+    border: none;
+
+}
