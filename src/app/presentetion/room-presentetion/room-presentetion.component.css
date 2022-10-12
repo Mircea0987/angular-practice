@@ -1,0 +1,43 @@
+.card-title{
+    color: rgb(34, 16, 63);
+    font-family: 'Alkalami', serif;
+
+
+}
+.card-text{
+    color: #22103f !important;
+    font-size: 1.1rem;
+}
+.card{
+    border: none;
+}
+a{
+    color: white;
+    background-color: #727ff9;
+}
+.test{
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 10%;
+    background-color: white;
+    padding: 2%;
+    color:#22103f ;
+}
+.color-button{
+    background-color: white;
+}
+.main-div{
+    padding-top: 5%;
+}
+.single-image{
+    padding-top: 2%;
+}
+.vesper-img{
+    width: 40%;
+    position: absolute;
+    left: 25%;
+}
+.margin{
+    margin: 5%;
+}

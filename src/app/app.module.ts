@@ -9,6 +9,9 @@ import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeTableComponent } from './employee/employee-table/employee-table.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { VideoContentComponent } from './video-content/video-content.component';
+import { PresentetionComponent } from './presentetion/presentetion.component';
+import { RoomPresentetionComponent } from './presentetion/room-presentetion/room-presentetion.component';
+import { ExpereincesComponent } from './presentetion/expereinces/expereinces.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { VideoContentComponent } from './video-content/video-content.component';
     EmployeeTableComponent,
     NavbarComponent,
     VideoContentComponent,
+    PresentetionComponent,
+    RoomPresentetionComponent,
+    ExpereincesComponent,
   ],
   imports: [
     BrowserModule,
