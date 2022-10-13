@@ -12,6 +12,9 @@ import { VideoContentComponent } from './video-content/video-content.component';
 import { PresentetionComponent } from './presentetion/presentetion.component';
 import { RoomPresentetionComponent } from './presentetion/room-presentetion/room-presentetion.component';
 import { ExpereincesComponent } from './presentetion/expereinces/expereinces.component';
+import { GastronomicExpereincesComponent } from './presentetion/gastronomic-expereinces/gastronomic-expereinces.component';
+import { BeachComponent } from './presentetion/beach/beach.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,9 @@ import { ExpereincesComponent } from './presentetion/expereinces/expereinces.com
     PresentetionComponent,
     RoomPresentetionComponent,
     ExpereincesComponent,
+    GastronomicExpereincesComponent,
+    BeachComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

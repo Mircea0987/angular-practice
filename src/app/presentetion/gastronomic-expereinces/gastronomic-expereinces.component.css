@@ -1,6 +1,3 @@
-.experiences-mai-div{
-    margin-top: 25%;
-}
 .card{
     border: none;
 }
@@ -22,4 +19,7 @@
 .card-text{
     font-size: 1.1rem;
     color: #22103f;
+}
+.spacing-top{
+    margin-top: 5%;
 }
