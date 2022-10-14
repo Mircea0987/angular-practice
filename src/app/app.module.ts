@@ -15,6 +15,8 @@ import { ExpereincesComponent } from './presentetion/expereinces/expereinces.com
 import { GastronomicExpereincesComponent } from './presentetion/gastronomic-expereinces/gastronomic-expereinces.component';
 import { BeachComponent } from './presentetion/beach/beach.component';
 import { FooterComponent } from './footer/footer.component';
+import { RoomsMenuComponent } from './rooms-menu/rooms-menu.component';
+import { RoomsModelComponent } from './rooms-menu/rooms-model/rooms-model.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { FooterComponent } from './footer/footer.component';
     GastronomicExpereincesComponent,
     BeachComponent,
     FooterComponent,
+    RoomsMenuComponent,
+    RoomsModelComponent,
   ],
   imports: [
     BrowserModule,

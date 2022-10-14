@@ -1,0 +1,12 @@
+
+<div class="main-div"></div>
+<div class="test" *ngFor="let room of roomsMenuList">
+    <div class="float-start">
+        <a href="#" class="nav-link" [routerLink]="['/room',room.roomType]"><h1>{{room.roomType}}</h1></a>
+    </div>
+    <div class="d-flex justify-content-end float-end">
+        
+        <div class="amnieties">{{room.amnieties}}</div>
+    </div>
+    <div class="pb-5"></div>
+</div>

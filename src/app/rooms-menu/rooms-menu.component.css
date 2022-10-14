@@ -1,0 +1,18 @@
+.main-div{
+    padding: 5%;
+}
+.test{
+    padding: 2%;
+    border: 1px 0 0 0;
+    border-color: #cdd3fd;
+    border-style: solid;
+}
+h1{
+    color: #22103f;
+    font-family: 'Alkalami', serif;
+    font-weight: 100;
+}
+/* .amnieties{
+    background-color: #cdd3fd;
+    padding: 40%;
+} */
