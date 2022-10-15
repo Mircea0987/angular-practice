@@ -1,0 +1,11 @@
+ul {
+    list-style-type:decimal;
+    border: 2px solid #22103f;
+    padding: 4%;
+}
+.space-top{
+    padding-top: 5%;
+}
+li{
+    font-size: 1.2rem;
+}

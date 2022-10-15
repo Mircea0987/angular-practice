@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+
+<div>
+    <img *ngFor="let rooms of roomsMainList" src="{{rooms.mainImg}}" class="w-100">
+
+    <div class="video-description" *ngFor="let rooms of roomsMainList">
+
+        <h1>{{rooms.title}}</h1>
+        <h4>{{rooms.roomType}}</h4>
+        <h5>{{rooms.description}}</h5>
+        <i class="fa-solid fa-arrow-down"></i>
+        <p>DISCOVER</p>
+    </div>
+</div>
