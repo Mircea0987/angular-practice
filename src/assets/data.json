@@ -1,0 +1,50 @@
+[
+
+      {
+        "id":1,
+        "title": "Vesper",
+        "roomTypeMenu": "Classic Room",
+        "amnieties": "18m^2",
+        "mainImg": "https://www.vesperhotel.com/wp-content/uploads/2020/07/classic-room-vesper-hotel-noordwijk.jpg",
+        "roomType":"Classic Room",
+        "description": "Stunning basics for the perfect weekend getaway",
+        "cardTitle":"Luxurious Essentials",
+        "cardText":"The Classic Room is uniquely designed for comfort, featuring furniture with a vintage flair and a relaxing rain shower. A custom king size bed and hand stuffed mattress makes this a perfect romantic getaway for two.",
+        "image1": "https://www.vesperhotel.com/wp-content/uploads/2020/07/classic-room-vesper-hotel-noordwijk-2.jpg",
+        "image3":"https://www.vesperhotel.com/wp-content/uploads/2020/07/classic-room-vesper-hotel-noordwijk-1.jpg",
+        "tableAmnities": "18m^2 Espresso machine Great WIfi Handmade bed Flatscreen TV Rainshower Vintage furniture",
+        "image2": "https://www.vesperhotel.com/wp-content/uploads/2020/07/classic-room-vesper-hotel-noordwijk-3.jpg"
+      },
+      {
+        "id":2,
+        "title": "Vesper",
+        "roomTypeMenu": "Deluxe Room",
+        "amnieties": "24m^2 Sea View",
+        "mainImg": "https://www.vesperhotel.com/wp-content/uploads/2020/08/deluxe-room-vesper-hotel-noordwijk.jpg",
+        "roomType":"Deluxe Room",
+        "description": "A Little More Adventure",
+        "cardTitle":"A view to remember",
+        "cardText":"Our Deluxe Room overlooks the great dunes of Noordwijk and the ever-shifting waves of the North Sea. The room is decorated with beautifully designed furniture and a handmade king size bed. This spacious room also boasts an extraordinary view of the famous Noordwijk sunset.",
+        "image1": "https://www.vesperhotel.com/wp-content/uploads/2020/08/deluxe-room-vesper-hotel-noordwijk-1.jpg",
+        "image3":"https://www.vesperhotel.com/wp-content/uploads/2020/08/deluxe-room-vesper-hotel-noordwijk-2.jpg",
+        "tableAmnities": "24m^2 SeaSide View Espresso machine Great Wifi Handmade bed Vintage Furniture Flatscreen TV",
+        "image2": "https://www.vesperhotel.com/wp-content/uploads/2020/08/deluxe-room-vesper-hotel-noordwijk-5.jpg"
+      },
+      {
+        "id":3,
+        "title": "Vesper",
+        "roomTypeMenu": "Deluxe Balcony Room",
+        "amnieties": "25m^2 Sea View Balcony",
+        "mainImg": "https://www.vesperhotel.com/wp-content/uploads/2020/11/deluxe-balcony-room-vesper-hotel-noordwijk.jpg",
+        "roomType":"Deluxe Balcony Room",
+        "description": "Room to unwind",
+        "cardTitle":"Experience the North Sea",
+        "cardText":"The Deluxe Balcony Room offers a stunning private balcony. Enjoy a breathtaking view of the sea and sunset on your own, or with a friend. This spacious room is set with fine furniture and an opulent bathroom space for relaxing throughout the day.",
+        "image1": "https://www.vesperhotel.com/wp-content/uploads/2020/08/deluxe-balcony-vesper-hotel-noordwijk-2.jpg",
+        "image3":"https://www.vesperhotel.com/wp-content/uploads/2020/08/deluxe-balcony-vesper-hotel-noordwijk-1.jpg",
+        "tableAmnities": "18m^2 Espresso machine Great WIfi Handmade bed Flatscreen TV Rainshower Vintage furniture",
+        "image2": "https://www.vesperhotel.com/wp-content/uploads/2020/08/deluxe-balcony-vesper-hotel-noordwijk-1.jpg"
+      }
+
+      
+]

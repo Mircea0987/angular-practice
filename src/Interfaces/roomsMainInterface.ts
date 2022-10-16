@@ -1,5 +1,7 @@
 export interface RoomsMainInterface{
     id:number;
+    roomTypeMenu:string;
+    amnieties:string;
     title:string;
     mainImg:string;
     roomType:string;

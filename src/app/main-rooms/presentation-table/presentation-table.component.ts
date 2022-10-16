@@ -7,12 +7,10 @@ import { RoomsMainInterface } from 'src/Interfaces/roomsMainInterface';
   styleUrls: ['./presentation-table.component.css']
 })
 export class PresentationTableComponent implements OnInit {
-  
-  @Input() roomsMainList:RoomsMainInterface[] = []
 
+  @Input() room:RoomsMainInterface
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

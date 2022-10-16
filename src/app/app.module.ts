@@ -15,13 +15,17 @@ import { ExpereincesComponent } from './presentetion/expereinces/expereinces.com
 import { GastronomicExpereincesComponent } from './presentetion/gastronomic-expereinces/gastronomic-expereinces.component';
 import { BeachComponent } from './presentetion/beach/beach.component';
 import { FooterComponent } from './footer/footer.component';
-import { RoomsMenuComponent } from './rooms-menu/rooms-menu.component';
-import { RoomsModelComponent } from './rooms-menu/rooms-model/rooms-model.component';
-import { PresentationFirstComponent } from './rooms-menu/rooms-model/presentation-first/presentation-first.component';
-import { PresentationTableComponent } from './rooms-menu/rooms-model/presentation-table/presentation-table.component';
-import { PresentationSecondComponent } from './rooms-menu/rooms-model/presentation-second/presentation-second.component';
-import { PresentationRoomsImageComponent } from './rooms-menu/rooms-model/presentation-rooms-image/presentation-rooms-image.component';
-import { RoomsForComponent } from './rooms-menu/rooms-for/rooms-for.component';
+
+
+import { HttpClient } from '@angular/common/http';
+import { MenuRoomsComponent } from './menu-rooms/menu-rooms.component';
+import { MenuRoomsForComponent } from './menu-rooms/menu-rooms-for/menu-rooms-for.component';
+import { MainRoomsComponent } from './main-rooms/main-rooms.component';
+import { PresentationFirstComponent } from './main-rooms/presentation-first/presentation-first.component';
+import { PresentationRoomsImageComponent } from './main-rooms/presentation-rooms-image/presentation-rooms-image.component';
+import { PresentetionSecondComponent } from './main-rooms/presentetion-second/presentetion-second.component';
+import { PresentationTableComponent } from './main-rooms/presentation-table/presentation-table.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -38,13 +42,15 @@ import { RoomsForComponent } from './rooms-menu/rooms-for/rooms-for.component';
     GastronomicExpereincesComponent,
     BeachComponent,
     FooterComponent,
-    RoomsMenuComponent,
-    RoomsModelComponent,
+    MenuRoomsComponent,
+    MenuRoomsForComponent,
+    MainRoomsComponent,
     PresentationFirstComponent,
-    PresentationTableComponent,
-    PresentationSecondComponent,
     PresentationRoomsImageComponent,
-    RoomsForComponent,
+    PresentetionSecondComponent,
+    PresentationTableComponent,
+    ErrorComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -52,6 +58,9 @@ import { RoomsForComponent } from './rooms-menu/rooms-for/rooms-for.component';
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports:[RoomPresentetionComponent,
+  PresentationFirstComponent
+  ]
 })
 export class AppModule { }

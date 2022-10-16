@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { RoomsMainService } from 'src/app/services/rooms-main.service';
 import { RoomsMainInterface } from 'src/Interfaces/roomsMainInterface';
 
 @Component({
@@ -8,11 +9,13 @@ import { RoomsMainInterface } from 'src/Interfaces/roomsMainInterface';
 })
 export class PresentationRoomsImageComponent implements OnInit {
 
-  @Input() roomsMainList:RoomsMainInterface[] = []
-  
+  @Input() room:RoomsMainInterface
+
+
+
   constructor() { }
 
   ngOnInit(): void {
-  }
 
+  }
 }

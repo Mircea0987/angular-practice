@@ -1,5 +1,5 @@
 .main-div{
-    padding: 5%;
+    margin-top: 5%;
 }
 .test{
     padding: 2%;
@@ -12,7 +12,3 @@ h1{
     font-family: 'Alkalami', serif;
     font-weight: 100;
 }
-/* .amnieties{
-    background-color: #cdd3fd;
-    padding: 40%;
-} */

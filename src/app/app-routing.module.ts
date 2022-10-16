@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { RoomsMenuComponent } from './rooms-menu/rooms-menu.component';
-import { RoomsModelComponent } from './rooms-menu/rooms-model/rooms-model.component';
-import { RoomsComponent } from './rooms/rooms.component';
+import { ErrorComponent } from './error/error.component';
+import { MainRoomsComponent } from './main-rooms/main-rooms.component';
+import { MenuRoomsForComponent } from './menu-rooms/menu-rooms-for/menu-rooms-for.component';
 import { VideoContentComponent } from './video-content/video-content.component';
 
 const routes: Routes = [
   {component: VideoContentComponent,path:""},
-  {component: RoomsMenuComponent, path:"rooms"},
-  {component: RoomsModelComponent, path:"room/:roomType"},
+  {path:"rooms",component:MenuRoomsForComponent},
+  {path:"room/:Id",component:MainRoomsComponent},
+  {path:"**",component:ErrorComponent}
+
 
 ];
 
