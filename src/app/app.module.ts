@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RoomsComponent } from './rooms/rooms.component';
@@ -26,6 +26,7 @@ import { PresentationRoomsImageComponent } from './main-rooms/presentation-rooms
 import { PresentetionSecondComponent } from './main-rooms/presentetion-second/presentetion-second.component';
 import { PresentationTableComponent } from './main-rooms/presentation-table/presentation-table.component';
 import { ErrorComponent } from './error/error.component';
+import { RequestInterceptor } from './request.interceptor';
 
 @NgModule({
   declarations: [
@@ -57,10 +58,17 @@ import { ErrorComponent } from './error/error.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: RequestInterceptor,
+      multi:true,
+    }
+  ],
   bootstrap: [AppComponent],
   exports:[RoomPresentetionComponent,
   PresentationFirstComponent
-  ]
+  ],
+  
 })
 export class AppModule { }

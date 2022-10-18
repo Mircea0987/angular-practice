@@ -6,10 +6,10 @@ import { MenuRoomsForComponent } from './menu-rooms/menu-rooms-for/menu-rooms-fo
 import { VideoContentComponent } from './video-content/video-content.component';
 
 const routes: Routes = [
-  {component: VideoContentComponent,path:""},
+  {path: '', component:VideoContentComponent, pathMatch:'full'},
   {path:"rooms",component:MenuRoomsForComponent},
   {path:"room/:Id",component:MainRoomsComponent},
-  {path:"**",component:ErrorComponent}
+  {path:"**",component:ErrorComponent},
 
 
 ];
