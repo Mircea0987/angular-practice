@@ -27,6 +27,10 @@ import { PresentetionSecondComponent } from './main-rooms/presentetion-second/pr
 import { PresentationTableComponent } from './main-rooms/presentation-table/presentation-table.component';
 import { ErrorComponent } from './error/error.component';
 import { RequestInterceptor } from './request.interceptor';
+import { FormsModule } from '@angular/forms';
+import { TemplateDrivenFormsComponent } from './template-driven-forms/template-driven-forms.component';
+import { LoginComponent } from './login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -51,12 +55,17 @@ import { RequestInterceptor } from './request.interceptor';
     PresentetionSecondComponent,
     PresentationTableComponent,
     ErrorComponent,
+    TemplateDrivenFormsComponent,
+    LoginComponent,
+
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
+
   ],
   providers: [
     {

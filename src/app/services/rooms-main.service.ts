@@ -15,9 +15,11 @@ export class RoomsMainService {
   $getRoomsMain = this.http.get<RoomsMainInterface[]>(this.url).pipe(
     shareReplay(1)
   )
-
   getRoomsMain():Observable <RoomsMainInterface[]>{
     return this.http.get<RoomsMainInterface[]>(this.url)
+  }
+  addRoomsMain(room:RoomsMainInterface){
+    return this.http.post<RoomsMainInterface[]>('assets/data.json',room)
   }
   constructor(private http:HttpClient) { }
 }

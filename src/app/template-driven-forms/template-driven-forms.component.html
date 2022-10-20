@@ -1,0 +1,50 @@
+{{roomsForm.valid | json}}
+{{roomsForm.pristine | json}}
+{{roomsForm.value | json}}
+<form #roomsForm="ngForm" (ngSubmit)="addRoom(roomsForm)">
+<div class="input-group mb-3">
+    <input required type="text" class="form-control" placeholder="ID" name="ID" [(ngModel)]="room.id">
+  </div>
+<div class="input-group mb-3">
+    <input required type="text" class="form-control" placeholder="roomTypeMenu" name="roomTypeMenu" [(ngModel)]="room.roomTypeMenu">
+  </div>
+  
+  <div class="input-group mb-3">
+    <input required type="text" class="form-control" placeholder="amnieties" name="amnieties"   [(ngModel)]="room.amnieties">
+  </div>
+  
+  <label for="basic-url" class="form-label">title</label>
+  <div class="input-group mb-3">
+    <input required type="text" class="form-control" name="title"   [(ngModel)]="room.title">
+  </div>
+  
+  <div class="input-group mb-3">
+    <label for="mainImg">mainImg</label>
+    <input required type="text" id="mainImg" class="form-control" name="mainImg"  [(ngModel)]="room.mainImg">
+  </div>
+  
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="roomType" name="roomType"  [(ngModel)]="room.roomType">
+    <input required type="text" class="form-control" placeholder="description " name="description"  [(ngModel)]="room.description">
+  </div>
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="cardTitle" name="cardTitle"   [(ngModel)]="room.cardTitle">
+    <input required type="text" class="form-control" placeholder="cardText" name="cardText"  [(ngModel)]="room.cardText">
+  </div>  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="image1" name="image1"   [(ngModel)]="room.image1">
+    <input required type="text" class="form-control" placeholder="image3"  name="image3" [(ngModel)]="room.image3">
+  </div>
+  <div class="input-group mb-3">
+    <input required type="text" class="form-control" placeholder="tableAmnities" name="tableAmnties" minlength="5" maxlength="20" #tableAmninitis="ngModel" [(ngModel)]="room.tableAmnities">
+    <input required type="text" class="form-control" placeholder="image2"  name="image2" [(ngModel)]="room.image2">
+  </div>
+  <div class="alert alert-danger" *ngIf="tableAmninitis.errors?.['minlength']">
+    amnieties should be min 5 chars long
+  </div>
+  <div *ngIf="tableAmninitis.dirty && tableAmninitis.errors?.['required']">
+    amnieties should be min 5 chars long
+  </div>
+  <div>
+    <button [disabled]="roomsForm.invalid" class="btn btn-primary" type="submit">Submit</button>
+  </div>
+</form>
