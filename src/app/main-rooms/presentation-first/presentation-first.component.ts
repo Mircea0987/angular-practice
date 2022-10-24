@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { RoomsMainService } from 'src/app/services/rooms-main.service';
 import { RoomsMainInterface } from 'src/Interfaces/roomsMainInterface';
 
 @Component({
@@ -11,15 +10,9 @@ export class PresentationFirstComponent implements OnInit {
   
   @Input() room:RoomsMainInterface
 
+  constructor() { }
 
-  rooms:RoomsMainInterface[] 
-
-
-  constructor(private service:RoomsMainService) { }
-
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 
 
 }

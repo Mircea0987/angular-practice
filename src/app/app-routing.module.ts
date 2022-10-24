@@ -11,6 +11,7 @@ const routes: Routes = [
   {path:'room/:Id',loadChildren:()=>import('./main-rooms/rooms.module').then(m=>m.RoomsModule)},
   {path:"template",component:TemplateDrivenFormsComponent},
   {path:"login",component:LoginComponent},
+  { path: 'booking', loadChildren: () => import('../booking/booking.module').then(m => m.BookingModule) },
   {path:"**",component:ErrorComponent},
 
 

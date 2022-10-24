@@ -11,7 +11,7 @@ import { RoomsMainService } from '../services/rooms-main.service';
 })
 export class MainRoomsComponent implements OnInit, OnDestroy {
   
-  rooms:RoomsMainInterface[] 
+  rooms:RoomsMainInterface[] = []
 
   room: RoomsMainInterface;
 
@@ -20,12 +20,6 @@ export class MainRoomsComponent implements OnInit, OnDestroy {
   // $getRoomsMain = this.http.get<RoomsMainInterface[]>(this.url).pipe(
   //   shareReplay(1)
   // )
-
-
-  roomsCount$ = this.service.$getRoomsMain.pipe(
-    map((rooms) => rooms.length)
-   )
-
 
   constructor(private service:RoomsMainService,private route:ActivatedRoute) { }
 

@@ -2,7 +2,9 @@
 <div class="main-div"></div>
 <div class="test">
     <div class="float-start">
-        <a class="nav-link" [routerLink]="['/room',room.id]"><h1>{{room.roomType}}</h1></a>
+        <!-- <a class="nav-link" [routerLink]="['/room',room.id]"><h1>{{room.roomType}}</h1></a> -->
+        <a class="nav-link" routerLink="/room/{{room.id}}"><h1>{{room.roomType}}</h1></a>
+
     </div>
     <div class="d-flex justify-content-end float-end">
         
