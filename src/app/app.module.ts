@@ -15,11 +15,22 @@ import { GastronomicExpereincesComponent } from './presentetion/gastronomic-expe
 import { BeachComponent } from './presentetion/beach/beach.component';
 import { ErrorComponent } from './error/error.component';
 import { RequestInterceptor } from './request.interceptor';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TemplateDrivenFormsComponent } from './template-driven-forms/template-driven-forms.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarModule } from './navbar/navbar.module';
 import { FooterModule } from './footer/footer.module';
+import { HoverDirective } from './hover.directive';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+
+
+
 
 
 @NgModule({
@@ -38,6 +49,8 @@ import { FooterModule } from './footer/footer.module';
     ErrorComponent,
     TemplateDrivenFormsComponent,
     LoginComponent,
+    HoverDirective,
+    ReactiveFormsComponent
 
 
   ],
@@ -48,6 +61,14 @@ import { FooterModule } from './footer/footer.module';
     FormsModule,
     NavbarModule,
     FooterModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatButtonModule,
+    BrowserAnimationsModule
+    
 
   ],
   providers: [
