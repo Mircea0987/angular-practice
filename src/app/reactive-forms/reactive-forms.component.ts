@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup,FormBuilder } from '@angular/forms';
+import { FormGroup,FormBuilder, FormArray, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-reactive-forms',
@@ -10,7 +10,15 @@ export class ReactiveFormsComponent implements OnInit {
 
   constructor(private formBuilder:FormBuilder) { }
 
+  get guest(){
+    return this.formGroup.get('guest') as FormArray
+  }
+
   formGroup: FormGroup
+
+  creditCardForm:FormGroup
+
+
 
 
   ngOnInit(): void {
@@ -19,12 +27,34 @@ export class ReactiveFormsComponent implements OnInit {
       guestEmail:[''],
       checkinDate:[''],
       checkoutDate:[''],
-      
+      address: this.formBuilder.group({
+        address1:[''],
+        country:[''],
+        zipCode:[''],
+      }),
+      guest: this.formBuilder.array([
+        {guestName:[''],age:new FormControl('')}
+      ])
+    }),
+    this.formGroup = this.formBuilder.group({
+      name:('')
+    })
+    this.creditCardForm = this.formBuilder.group({
+      creditCard:(''),
+      firstName:(''),
+      lastName:(''),
 
     })
   }
   submitForm(){
      console.log(this.formGroup.value)
   }
+
+  addGuest(){
+    this.guest.push(
+      this.formBuilder.group({guestName:[''],age:new FormControl('')})
+    )
+  }
+
 
 }

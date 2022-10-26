@@ -1,33 +1,22 @@
-<p>reactive-forms works!</p>
 {{formGroup.value | json}}
 {{formGroup.pristine | json}}
 {{formGroup.dirty | json}}
 
 
-<form [formGroup]="formGroup" class="example-form" (ngSubmit)="submitForm()">
+<!-- <form [formGroup]="formGroup" class="example-form" (ngSubmit)="submitForm()">
 
     <mat-form-field class="example-full-width" appearance="fill">
         <mat-label>Room Id</mat-label>
         <input type="text" matInput formControlName="roomId"
                placeholder="Room Id">
-        <!-- <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-          Please enter a valid email address
-        </mat-error>
-        <mat-error *ngIf="emailFormControl.hasError('required')">
-          Email is <strong>required</strong>
-        </mat-error> -->
+
       </mat-form-field>
 
       <mat-form-field class="example-full-width" appearance="fill">
         <mat-label>Email</mat-label>
         <input type="email" matInput formControlName="guestEmail"
                placeholder="Email">
-        <!-- <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-          Please enter a valid email address
-        </mat-error>
-        <mat-error *ngIf="emailFormControl.hasError('required')">
-          Email is <strong>required</strong>
-        </mat-error> -->
+
       </mat-form-field>
 
       <mat-form-field class="example-full-width" appearance="fill">
@@ -35,12 +24,7 @@
         <input matInput [matDatepicker]="picker1" formControlName="checkinDate">
         <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
         <mat-datepicker #picker1></mat-datepicker>
-        <!-- <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-          Please enter a valid email address
-        </mat-error>
-        <mat-error *ngIf="emailFormControl.hasError('required')">
-          Email is <strong>required</strong>
-        </mat-error> -->
+
       </mat-form-field>
 
       <mat-form-field class="example-full-width" appearance="fill">
@@ -48,14 +32,115 @@
         <input matInput [matDatepicker]="picker2" formControlName="checkoutDate">
         <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
         <mat-datepicker #picker2></mat-datepicker>
-        <!-- <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-          Please enter a valid email address
-        </mat-error>
-        <mat-error *ngIf="emailFormControl.hasError('required')">
-          Email is <strong>required</strong>
-        </mat-error> -->
       </mat-form-field>
       
 
+      <div formGroupName="address">
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Address</mat-label>
+          <input type="text" matInput formControlName="address1"
+                 placeholder="Address1">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Country</mat-label>
+          <input type="text" matInput formControlName="country"
+                 placeholder="country">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Zip Code</mat-label>
+          <input type="text" matInput formControlName="zipCode"
+                 placeholder="Zip Code">
+        </mat-form-field>
+
+  
+      </div>
+
+
+      <button mat-raised-button color="primary" type="submit" (click)="addGuest()">Add Guest</button>
+
+
+
+      <div formArrayName="guest">
+        <div *ngFor="let guest of guest.controls; let i = index">
+          <div [formGroupName]="i">
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Guest Name</mat-label>
+            <input type="text" matInput formControlName="guestName"
+                   placeholder="Guest Name">
+          </mat-form-field>
+          <mat-label>Guest {{i}}</mat-label>
+
+
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Age</mat-label>
+            <input type="number" matInput formControlName="age"
+                   placeholder="Age">
+          </mat-form-field>
+
+        </div>
+      </div>
+
+      </div>
+
+
       <button mat-raised-button color="primary" type="submit">Primary</button>
-    </form>
+
+
+      
+    </form> -->
+<!-- <form [formGroup]="formGroup" (ngSubmit)="submitForm()">
+
+
+  
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>test</mat-label>
+    <input type="text" matInput formControlName="test"
+           placeholder="test">
+
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">Primary</button>
+
+
+</form> -->
+
+<!-- <form [formGroup]="formGroup">
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>test</mat-label>
+    <input type="text" matInput formControlName="name"
+           placeholder="name">
+
+  </mat-form-field>
+
+</form> -->
+{{creditCardForm.value | json}}
+
+<form [formGroup]="creditCardForm">
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Credit Card</mat-label>
+    <input type="text" matInput formControlName="creditCard"
+           placeholder="Credit Card">
+
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Credit Card</mat-label>
+    <input type="text" matInput formControlName="firstName"
+           placeholder="last Name">
+
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Credit Card</mat-label>
+    <input type="text" matInput formControlName="lastName"
+           placeholder="last Name">
+
+  </mat-form-field>
+  
+
+</form>
